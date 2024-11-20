@@ -1,18 +1,19 @@
 # JustKeep
+[English]
 
-### The pyrpose:
-Make a simple To do list on Python
-### Languages:
-- Python 3.12
-### System requirements:
-- Linux | Mac OS | Windows
-### Quick setup
-1. Clone project
-2. Upgrate pip:
-`pip install --upgrade pip`
-3. Install module Pillow (PIL)
-`pip install Pillow`
-4. Run file `justkeep.py`
-   
+## About
+![Screenshot](https://i.postimg.cc/Y0kn5kTx/3.jpg)
+
+A note-taking application written entirely in Python using the Tkinter library.
+## Features
+1. The new design
+2. Notes are stored in a database (SQLite).
+
+## Downloads
+### Windows
+You can download the finished file on the [Releases](https://github.com/krwg/JustKeep/releases/tag/V.1.0) tab or in the [Telegram Repo's.](https://t.me/krwgrepo/105/124)
+
+### More details
+More details in [Telegraph Article](https://telegra.ph/JustKeep-Bystrye-zametki-bez-lishnih-slozhnostej-11-20) on Russian.
 
 
