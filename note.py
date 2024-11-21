@@ -3,11 +3,15 @@ import customtkinter
 import sqlite3
 from PIL import Image, ImageTk
 import tkinter.messagebox as messagebox
+import requests
 
 #dev.krwg
 
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("blue")
+
+
+CURRENT_VERSION = "1.01" 
 
 def db_start():
     global conn, cur
@@ -135,7 +139,21 @@ def close_settings():
     settings_window = None
 
 def check_for_updates():
-    messagebox.showinfo("Обновления", "У вас последняя версия.")
+    try:
+        response = requests.get("https://raw.githubusercontent.com/krwg/JustKeep/refs/heads/master/version.txt", timeout=5)
+        response.raise_for_status()
+        latest_version = response.text.strip()
+
+        if latest_version > CURRENT_VERSION:
+            messagebox.showinfo("Обновления", f"Доступно обновление до версии {latest_version}!")
+        else:
+            messagebox.showinfo("Обновления", "У вас последняя версия.")
+    except requests.exceptions.RequestException as e:
+        messagebox.showerror("Ошибка", f"Ошибка проверки обновлений: {e}. Проверьте интернет соединение.")
+    except Exception as e:
+        messagebox.showerror("Ошибка", f"Произошла непредвиденная ошибка: {e}")
+
+
 
 def select_section(func, right_column):
     global selected_section
