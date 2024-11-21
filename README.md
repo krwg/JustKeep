@@ -11,7 +11,7 @@ A note-taking application written entirely in Python using the Tkinter library.
 
 ## Downloads
 ### Windows
-You can download the finished file on the [Releases](https://github.com/krwg/JustKeep/releases/tag/V.1.0) tab or in the [Telegram Repo's.](https://t.me/krwgrepo/105/124)
+You can download the finished file on the [Releases](https://github.com/krwg/JustKeep/releases/tag/V.1.0.1) tab or in the [Telegram Repo's.](https://t.me/krwgrepo/105/133)
 
 ### More details
 More details in [Telegraph Article](https://telegra.ph/JustKeep-Bystrye-zametki-bez-lishnih-slozhnostej-11-20) on Russian.
