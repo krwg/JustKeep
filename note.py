@@ -99,7 +99,7 @@ def update_notes_list():
             for i, (note_id, note_text, pinned, formatted_text) in enumerate(notes):
                 create_note_container(json.loads(formatted_text), i, note_id, pinned)
         else:
-            notes_label.configure(text="Здесь будут ваши заметки")
+            notes_label.configure(text="Здесь будут ваши созданные заметки")
             instruction_label.grid(row=1, column=0, sticky="w", padx=10, pady=5)
     except sqlite3.Error as e:
         messagebox.showerror("Ошибка", f"Ошибка при обновлении списка заметок: {e}")
