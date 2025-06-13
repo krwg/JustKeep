@@ -16,4 +16,5 @@ You can download the finished file on the [Releases](https://github.com/krwg/Jus
 ### More details
 More details in [Telegraph Article](https://telegra.ph/JustKeep-Bystrye-zametki-bez-lishnih-slozhnostej-11-20) on Russian.
 
-
+## New repository
+Working on an application in another [repository](https://github.com/krwg/JKeep_Desktop)
